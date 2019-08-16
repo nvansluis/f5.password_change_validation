@@ -1,7 +1,7 @@
 /*
  * Name: password_change_validation.js
  * Author: Niels van Sluis, <niels@van-sluis.nl>
- * Version: 1.0.0
+ * Version: 1.0.1
  * Date: 2019-08-16
  *
  * Use the F5 APM Advanced Customization Editor and reference to this script from Common/footer.inc.
@@ -97,6 +97,9 @@ if (document.getElementsByClassName("credentials_input_password").length == 2 &&
             document.getElementById("number").getAttribute("class") == "valid" &&
             document.getElementById("length").getAttribute("class") == "valid" ) {
             field2.disabled = false;
+        }
+        else {
+            field2.disable = true;
         }
 
     }
